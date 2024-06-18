@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Local Finder</title>
+  <title>Login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -18,88 +18,162 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="aos/aos.css" rel="stylesheet">
-  <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: May 18 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
-<body class="index-page">
+<body class="starter-page-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      <a href="main.html" class="logo d-flex align-items-center me-auto me-xl-0">
+     
         <h1 class="sitename">Local Finder</h1><span>.</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#" class="">Home</a></li>
-          <li><a href="#">Introduce</a></li>
+          <li><a href="main.html" class="">Home</a></li>
+          <li><a href="introduce.html">Introduce</a></li>
           <li class="dropdown"><a href="#"><span>Food</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">맛집 탐색하기</a></li>
-              <li><a href="#">카페 탐색하기</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="food_restaurant.html">맛집 탐색하기</a></li>
+              <li><a href="food_cafe.html">카페 탐색하기</a></li>
             </ul>
           </li>
-          <li><a href="">Enjoy</a></li>
+          <li><a href="enjoy.html">Enjoy</a></li>
           <li class="dropdown"><a href="#"><span>Review</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">게시판 목록</a></li>
-              <li><a href="index.html#contact">문의하기</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="review_board.html">게시판 목록</a></li>
+
+              <li><a href="Contact.html">문의하기</a></li>
             </ul>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="Login.html">Login</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+  
+     <!-- Hero Section -->
+     <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
+      <img src="images/main.jpg" alt="" data-aos="fade-in">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+            <h2 data-aos-delay="200">ID</h2>
           </div>
           <div class="col-lg-5">
-            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" class="form-control" placeholder="Enter email address">
-              <input type="submit" class="btn btn-primary" value="Sign up">
+            <form action="#" class="sign-up-form d-flex"  data-aos-delay="300">
+              <input type="text" id = "login-id" class="form-control" placeholder="Enter ID">
             </form>
           </div>
+          <div class="col-lg-10">
+            <h2 data-aos-delay="200">passward</h2>
+          </div>
+
+          <div class="col-lg-5">
+            <form action="#" class="sign-up-form d-flex" data-aos-delay="300">
+              <input type="text" id="login-password" class="form-control" placeholder="Enter passward"> 
+              <input type="submit" id="login-btn" class="btn btn-primary" value="Sign up" onclick="login()">
+
+
+            <script>
+               document.getElementById('login-btn').addEventListener('click', function(event) {
+               event.preventDefault(); // 기본 제출 동작 방지
+               
+                 });
+
+              function login() {
+                if (!window.localStorage) {
+                    alert("로컬 스토리지를 지원하지 않습니다.");
+                    return;
+                }
+                let id = document.getElementById('login-id').value;
+                let password = document.getElementById('login-password').value;
+                let storedPassword = localStorage.getItem(id);
+    
+                if (storedPassword === null) {
+                    alert("해당 아이디가 존재하지 않습니다.");
+                } else if (storedPassword === password) {
+                    alert("로그인 성공!");
+                    localStorage.setItem('currentUser', id);
+                    window.location.href = 'main.html';
+                    
+                } else {
+                    alert("비밀번호가 일치하지 않습니다.");
+                }
+            }
+
+            window.onload = function() {
+            let currentUser = localStorage.getItem('currentUser');
+            if (currentUser) {
+              if (confirm("로그인된 상태입니다. 로그아웃하시겠습니까?")) {
+                localStorage.removeItem('currentUser');
+                alert("로그아웃 되었습니다.");
+              }  
+              else {
+                window.location.href = 'main.html';
+             }
+      }
+    }
+
+          </script>
+            </form>
+          </div>
+          
+          
+
         </div>
+        
+        <div class="col-lg-5">
+          <a href="signup.html">회원가입</a> 
+        </div>
+          
       </div>
 
     </section><!-- /Hero Section -->
-    </main>
-    </body>
-    </html>
+
+
+  </main>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -130,7 +130,7 @@
 
           
               if (id.length < 3 || id.length > 11) {
-                alert("아이디는 3자에서 10자 사이여야 합니다.");
+                alert("아이디는 4자에서 10자 사이여야 합니다.");
                 return;
               }
 
@@ -155,6 +155,7 @@
     
               localStorage.setItem(id, password);
               alert("회원가입이 완료되었습니다!");
+              window.location.href = 'Login.html';
             }
           </script>
 

@@ -27,6 +27,12 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .sign{
+      color:white;
+    }
+  </style>
+
 
 </head>
 
@@ -73,7 +79,7 @@
      <!-- Hero Section -->
      <section id="hero" class="hero section">
 
-      <img src="images/main.jpg" alt="" data-aos="fade-in">
+      <img src="images/Login.jpg" alt="" data-aos="fade-in">
       
       <div class="container">
         <div class="row">
@@ -86,13 +92,13 @@
             </form>
           </div>
           <div class="col-lg-10">
-            <h2 data-aos-delay="200">passward</h2>
+            <h2 data-aos-delay="200">password</h2>
           </div>
 
           <div class="col-lg-5">
             <form action="#" class="sign-up-form d-flex" data-aos-delay="300">
-              <input type="text" id="login-password" class="form-control" placeholder="Enter passward"> 
-              <input type="submit" id="login-btn" class="btn btn-primary" value="Sign up" onclick="login()">
+              <input type="text" id="login-password" class="form-control" placeholder="Enter password"> 
+              <input type="submit" id="login-btn" class="btn btn-primary" value="Login" onclick="login()">
 
 
             <script>
@@ -112,7 +118,8 @@
     
                 if (storedPassword === null) {
                     alert("해당 아이디가 존재하지 않습니다.");
-                } else if (storedPassword === password) {
+                } 
+                else if (storedPassword === password) {
                     alert("로그인 성공!");
                     localStorage.setItem('currentUser', id);
                     window.location.href = 'main.html';
@@ -143,8 +150,9 @@
 
         </div>
         
+  
         <div class="col-lg-5">
-          <a href="signup.html">회원가입</a> 
+          <a href="signup.html" class ="sign">회원가입</a>
         </div>
           
       </div>

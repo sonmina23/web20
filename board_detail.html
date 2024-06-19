@@ -206,6 +206,16 @@
 
             </div>
 
+            <script>
+              function check(){
+              let currentUser = localStorage.getItem('currentUser');
+              if (currentUser=== null) {
+              alert("가입한 회원만 이용할 수 있는 기능입니다.")
+              
+            }
+              }
+            </script>
+
 
             <div class="reply-form" id="myreply">
 
@@ -225,7 +235,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Post Comment</button>
+                  <button type="submit" class="btn btn-primary" onclick="check()">Post Comment</button>
                 </div>
 
               </form>

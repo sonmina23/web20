@@ -151,29 +151,39 @@
 
          
 
-
-            <div class="reply-form" id="myreply">
-
-              <h4>Leave a Reply</h4>
-              <p>작성자에게 하고싶은 말을 달아주세요. </p>
-              <form action="">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input name="name" type="text" class="form-control" placeholder="Your Name*">
+              <script>
+                function check(){
+                let currentUser = localStorage.getItem('currentUser');
+                if (currentUser=== null) {
+                alert("가입한 회원만 이용할 수 있는 기능입니다.")
+                 
+              }
+                }
+              </script>
+  
+  
+              <div class="reply-form" id="myreply">
+  
+                <h4>Leave a Reply</h4>
+                <p>작성자에게 하고싶은 말을 달아주세요. </p>
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                    </div>
                   </div>
-                </div>
-              
-                <div class="row">
-                  <div class="col form-group">
-                    <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                
+                  <div class="row">
+                    <div class="col form-group">
+                      <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                    </div>
                   </div>
-                </div>
-
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Post Comment</button>
-                </div>
-
-              </form>
+  
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary" onclick="check()">Post Comment</button>
+                  </div>
+  
+                </form>
 
             </div>
 
